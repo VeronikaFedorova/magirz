@@ -1,0 +1,52 @@
+@import url("../constants.css");
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 50px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(var(--dark), 0.5);
+  width: 100%;
+  z-index: 10;
+  transition-timing-function: ease-in;
+  transition: all 0.5s;
+  padding: 0 5%;
+}
+
+.navbar .container div {
+  padding-top: 100px;
+}
+
+.nav__black {
+  background-color: var(--dark);
+}
+
+.fa-film {
+  font-size: 15vmin;
+  color: var(--red);
+}
+
+.fa-film:hover,
+input[type="search"] {
+  color: var(--light);
+  outline: none;
+}
+
+.fa-user {
+  color: var(--light);
+  font-size: 8vmin;
+}
+
+.fa-user:hover,
+a:hover {
+  color: var(--red);
+}
+
+a {
+  color: var(--light);
+  text-decoration: none;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}

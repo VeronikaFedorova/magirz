@@ -1,0 +1,36 @@
+@import "../constants.css";
+
+.label {
+  position: relative;
+}
+
+.label .placeholder.hide {
+  display: none;
+}
+
+.label .placeholder {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  pointer-events: none;
+}
+.label:focus-within .placeholder {
+  display: none;
+}
+
+input {
+  width: 35vw;
+  height: 5vh;
+  background-color: (var(--dark), 0.5);
+  border: none;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: var(--light);
+}
+
+.placeholder {
+  color: var(--light);
+}
+
+.hidden {
+  display: none;
+}

@@ -1,0 +1,23 @@
+@import url("../../components/constants.css");
+
+.userPage {
+    padding-top: 100px;
+}
+
+li {
+    list-style-type: none;
+}
+
+.userPage {
+    height: 600px;
+    background-color: var(--dark);
+}
+
+.profile__list-item {
+    padding-top: 3%;
+    color: var(--light);
+}
+
+.profile__picture .fa-user {
+    font-size: 280px;
+}
