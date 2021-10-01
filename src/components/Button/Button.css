@@ -1,0 +1,13 @@
+@import url("./constants.css");
+
+button {
+    border: none;
+    outline: none;
+    width: 100%;
+    padding: 15px 0;
+    color: var(--light);
+    font-size: 16px;
+    letter-spacing: 1px;
+    background: var(--red);
+    cursor: pointer;
+  }

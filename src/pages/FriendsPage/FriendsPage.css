@@ -1,0 +1,32 @@
+@import url("../../components/constants.css");
+
+.row {
+  padding-top: 8%;
+}
+  
+.row__posters {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 150px);
+  grid-gap: 50px 50px;
+  justify-content: center;
+}
+  
+.row__poster {
+  object-fit: contain;
+  width: 100%;
+}
+  
+.poster {
+  color: var(--light);
+}
+  
+.poster:hover {
+  transform: scale(1.03);
+  cursor: pointer;
+}
+  
+.title__friend {
+  text-align: center;
+  padding: 5%;
+}
+  
