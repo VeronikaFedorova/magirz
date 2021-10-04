@@ -1,8 +1,7 @@
-import React, { useState } from "react";
+import React from "react";
 import "./SearchBar.css";
 
 const SearchBar = () => {
-  const [value, setValue] = useState("");
 
   return (
     <div className="search_field">
@@ -10,7 +9,6 @@ const SearchBar = () => {
       <input
         type="search"
         placeholder="Search"
-        onChange={(event) => setValue(event.target.value)}
       />
     </div>
   );

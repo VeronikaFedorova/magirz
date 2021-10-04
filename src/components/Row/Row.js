@@ -4,7 +4,6 @@ import "./Row.css";
 
 const Row = ({ title, fetchUrl, value }) => {
   const [ movies, setMovies ] = useState([]);
-  const [ liked, setLiked ] = useState([]);
 
   useEffect(() => {
     async function fetchData() {
@@ -14,11 +13,6 @@ const Row = ({ title, fetchUrl, value }) => {
     }
     fetchData();
   }, [fetchUrl]);
-
-  const handleClick = (movies) => {
-    setLiked(movies.id);
-  }
-
 
 
   return (
@@ -42,8 +36,7 @@ const Row = ({ title, fetchUrl, value }) => {
                   <h5>Watch now</h5>
                 </a>
                 <button 
-                  className="heart"
-                  onClick={handleClick}>
+                  className="heart">
                   <i
                     className="fa fa-heart"
                     aria-hidden="true"

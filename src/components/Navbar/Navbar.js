@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import "./Navbar.css";
-import movies from "../../components/Row/Row";
 import SearchBar from "../SearchBar/SearchBar";
 
 const Navbar = ({ value }) => {

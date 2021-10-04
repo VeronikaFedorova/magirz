@@ -38,6 +38,8 @@ const LoginLink = () => {
                     case "auth/wrong-password":
                         setPasswordError(err.message);
                         break;
+                    default: 
+                        console.log("Error");
                 }
             })
     };
@@ -56,6 +58,8 @@ const LoginLink = () => {
                 case "auth/weak-password":
                     setPasswordError(err.message);
                     break;
+                default: 
+                    console.log("Error");
             }
         })
     };
